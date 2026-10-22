@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Meeting Notes — Support</title>
+<style>
+  :root { --bg: #ffffff; --fg: #1c1c1e; --muted: #6e6e73; --accent: #e5532b; --card: #f2f2f7; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #000000; --fg: #f2f2f7; --muted: #a1a1a6; --card: #1c1c1e; } }
+  body { background: var(--bg); color: var(--fg); font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 0; padding: 32px 16px; }
+  main { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 30px; margin-bottom: 4px; }
+  h2 { font-size: 21px; margin-top: 32px; }
+  .muted { color: var(--muted); }
+  a { color: var(--accent); }
+  .card { background: var(--card); border-radius: 14px; padding: 16px 20px; margin: 20px 0; }
+  .button { display: inline-block; background: var(--accent); color: #fff; text-decoration: none; padding: 10px 18px; border-radius: 10px; font-weight: 600; }
+</style>
+</head>
+<body>
+<main>
+<h1>Meeting Notes Support</h1>
+<p class="muted">For Apple Watch, iPhone and Mac</p>
+
+<div class="card">
+  <p><strong>Need help or found a problem?</strong> Open a support request and we'll reply there. Please don't include meeting content or API keys.</p>
+  <p><a class="button" href="https://github.com/nksnaresh/meeting-notes-app/issues/new">Contact support</a></p>
+</div>
+
+<h2>Recording</h2>
+<p><strong>Start with one tap on Apple Watch.</strong> Add the Record complication to a watch face (touch and hold the face › Edit › Complications), or add the Record Meeting control to Control Center or the Action Button. On iPhone, use the Record tab; on Mac, press ⇧⌘R or use the menu bar.</p>
+<p><strong>Recording stops by itself</strong> after 5 minutes without speech (change this in Settings), and the silence at the end is trimmed.</p>
+<p><strong>Watch recordings arrive on iPhone automatically.</strong> Keep the iPhone app installed. Recordings are checked byte for byte before the Watch deletes its copy, so nothing is lost if the transfer is interrupted.</p>
+
+<h2>Transcripts and notes</h2>
+<p>Transcripts, speaker labels and notes are made on your device. Notes are written by Apple Intelligence where it's available, otherwise by the built-in extractor. To use OpenAI, Claude, Gemini or AssemblyAI instead, add your own key in Settings › Your AI keys.</p>
+<p>If transcription says the language isn't available, turn on that language for dictation (iPhone: Settings › General › Keyboard; Mac: System Settings › Keyboard) or pick another meeting language in the app's Settings.</p>
+
+<h2>Your meetings in iCloud</h2>
+<p>Every meeting is a folder in iCloud Drive › Watch Meeting Notes, with the audio, transcript and notes as ordinary files. Meetings appear on all your devices signed in to the same Apple Account with iCloud Drive on.</p>
+
+<h2>Mac</h2>
+<p>Drop any audio or video file — Zoom or Teams recordings, voice memos, podcasts — on the window to transcribe it. Every action item from every meeting is in Action Items; search covers every transcript.</p>
+
+<h2>Privacy</h2>
+<p>We don't run a server that stores your meetings and we can't see them. Read the <a href="privacy.html">privacy policy</a>.</p>
+
+<p class="muted">Recording laws differ by place. Please tell people when you are recording.</p>
+</main>
+</body>
+</html>

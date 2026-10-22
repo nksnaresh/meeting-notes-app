@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Meeting Notes — Privacy Policy</title>
+<style>
+  :root { --bg: #ffffff; --fg: #1c1c1e; --muted: #6e6e73; --accent: #e5532b; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #000000; --fg: #f2f2f7; --muted: #a1a1a6; } }
+  body { background: var(--bg); color: var(--fg); font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 0; padding: 32px 16px; }
+  main { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 30px; margin-bottom: 4px; }
+  h2 { font-size: 21px; margin-top: 32px; }
+  .muted { color: var(--muted); }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+<h1>Privacy Policy</h1>
+<p class="muted">Meeting Notes (Watch Meeting Notes) · Last updated: <!-- DATE -->October 22, 2026</p>
+
+<p>Meeting Notes records meetings you start on your Apple Watch, iPhone or Mac, or audio files you import on your Mac, and turns them into a transcript, summary, key notes and action items. This policy explains what happens to that information. The short version: <strong>your meetings stay on your devices and in your own iCloud. We do not run a server that stores them, and we cannot see them.</strong></p>
+
+<h2>What the app stores and where</h2>
+<ul>
+  <li><strong>Recordings, transcripts, notes and action items</strong> are stored on your iPhone, Apple Watch and Mac, and in your personal iCloud Drive and iCloud (CloudKit) private database under your Apple Account. Apple provides this storage; its handling is covered by Apple's privacy policy.</li>
+  <li><strong>Settings and a monthly count of processed minutes</strong> are stored on your device. The minute count contains no meeting content.</li>
+</ul>
+
+<h2>How meetings are processed</h2>
+<ul>
+  <li><strong>On-device (default, free).</strong> Transcription uses Apple's on-device speech recognition, and summaries and action items are written on your iPhone or Mac by Apple Intelligence (where available) or a built-in extractor. Audio and transcripts are not sent anywhere.</li>
+  <li><strong>Speaker labels on your device (default, free).</strong> Who-spoke-when is worked out on the device. The first time, the app downloads the speaker-recognition model files (about 21 MB) from Hugging Face; that download sends no meeting data.</li>
+  <li><strong>Your own AI key (optional, free).</strong> If you add an OpenAI, Anthropic (Claude), Google (Gemini) or AssemblyAI API key, the meeting transcript — and, if you choose cloud speaker labels (AssemblyAI or OpenAI), the audio — is sent directly from your device to that provider under your own account and their terms. We never see it. Your key is stored in your iCloud Keychain and sent only to that provider.</li>
+  <li><strong>Pro (optional subscription, when offered).</strong> If you subscribe and leave "Use Pro cloud processing" on, a meeting's audio may be sent over an encrypted connection to our processing service for speaker labels, and its transcript for notes. The service forwards it to our AI providers, returns the result to your device and does not store it. It identifies your subscription only by Apple's anonymous transaction ID, to apply monthly limits.</li>
+  <li><strong>Automatic stop.</strong> The app measures sound level on the device to stop recording after a period without speech. This happens locally; nothing is sent.</li>
+</ul>
+
+<h2>Permissions</h2>
+<ul>
+  <li><strong>Microphone</strong> — to record meetings you start. Recording only ever starts from your own tap, Siri request or button press, and the system microphone indicator is visible the whole time.</li>
+  <li><strong>Speech Recognition</strong> — to transcribe recordings on your device.</li>
+  <li><strong>Notifications</strong> — one alert when a meeting's notes are ready or need attention.</li>
+  <li><strong>Files you import</strong> (Mac) — only the files you drop on the app or choose to import; the original is never changed.</li>
+  <li><strong>Reminders and Calendar</strong> (optional) — only when you tap "Add to Reminders" or "Add follow-up", and to suggest a meeting title from the event happening now if you have already granted Calendar access.</li>
+</ul>
+
+<h2>What we do not do</h2>
+<ul>
+  <li>No accounts, no advertising, no tracking, no analytics SDKs, no selling or sharing of data.</li>
+  <li>No silent or background recording mode.</li>
+</ul>
+
+<h2>Purchases</h2>
+<p>Subscriptions are processed by Apple. We receive no payment details.</p>
+
+<h2>Deleting your data</h2>
+<p>Deleting a meeting in the app removes its recording, transcript, notes and action items from your device, your iCloud Drive and your other devices. Deleting the app and its iCloud data (on iPhone: Settings &gt; [your name] &gt; iCloud &gt; Manage Account Storage; on Mac: System Settings &gt; [your name] &gt; iCloud &gt; Manage) removes everything. Items you added to Apple Reminders or Calendar remain in those apps.</p>
+
+<h2>Recording laws</h2>
+<p>You are responsible for following the recording-consent laws that apply to you and for telling others when you record where required.</p>
+
+<h2>Children</h2>
+<p>The app is not directed at children under 13.</p>
+
+<h2>Contact</h2>
+<p>Questions or requests: open an issue at <a href="https://github.com/nksnaresh/meeting-notes-app/issues">https://github.com/nksnaresh/meeting-notes-app/issues</a>, or see the <a href="support.html">support page</a>.</p>
+</main>
+</body>
+</html>
